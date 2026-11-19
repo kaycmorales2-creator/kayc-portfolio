@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Kay-C L. Morales</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+</head>
+<body>
+
+    <svg class="bg-canvas" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <radialGradient id="emeraldGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#00f5a0" stop-opacity="0.32" />
+                <stop offset="100%" stop-color="#00f5a0" stop-opacity="0" />
+            </radialGradient>
+            <radialGradient id="tealGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#00d9f5" stop-opacity="0.24" />
+                <stop offset="100%" stop-color="#00d9f5" stop-opacity="0" />
+            </radialGradient>
+        </defs>
+        <circle cx="220" cy="140" r="240" fill="url(#emeraldGlow)" class="aura-pulse" />
+        <circle cx="1220" cy="720" r="280" fill="url(#tealGlow)" class="aura-pulse" />
+        <g class="spin-cw">
+            <circle cx="220" cy="140" r="145" fill="none" stroke="#00f5a0" stroke-width="1.5" stroke-dasharray="14 8" opacity="0.55" />
+            <circle cx="220" cy="140" r="115" fill="none" stroke="#00e699" stroke-width="4" stroke-dasharray="28 18" opacity="0.45" />
+            <circle cx="220" cy="140" r="82" fill="none" stroke="#7ef9d0" stroke-width="1.5" opacity="0.4" />
+        </g>
+        <g class="spin-ccw">
+            <circle cx="440" cy="270" r="95" fill="none" stroke="#00f5a0" stroke-width="2" stroke-dasharray="10 10" opacity="0.5" />
+            <circle cx="440" cy="270" r="68" fill="none" stroke="#00d9f5" stroke-width="3" stroke-dasharray="18 12" opacity="0.4" />
+        </g>
+        <g class="spin-cw-slow">
+            <circle cx="760" cy="460" r="230" fill="none" stroke="#00f5a0" stroke-width="1.5" stroke-dasharray="6 14" opacity="0.35" />
+            <circle cx="760" cy="460" r="190" fill="none" stroke="#00e699" stroke-width="2.5" stroke-dasharray="36 20" opacity="0.35" />
+            <circle cx="760" cy="460" r="140" fill="none" stroke="#7ef9d0" stroke-width="1" opacity="0.28" />
+        </g>
+        <g class="spin-cw">
+            <circle cx="1220" cy="720" r="165" fill="none" stroke="#00f5a0" stroke-width="2" stroke-dasharray="16 10" opacity="0.55" />
+            <circle cx="1220" cy="720" r="130" fill="none" stroke="#00e699" stroke-width="4.5" stroke-dasharray="24 14" opacity="0.45" />
+            <circle cx="1220" cy="720" r="90" fill="none" stroke="#00d9f5" stroke-width="1.5" opacity="0.45" />
+        </g>
+        <g class="spin-ccw">
+            <circle cx="1040" cy="560" r="76" fill="none" stroke="#00f5a0" stroke-width="2" stroke-dasharray="12 8" opacity="0.5" />
+            <circle cx="1040" cy="560" r="50" fill="none" stroke="#7ef9d0" stroke-width="2.5" opacity="0.4" />
+        </g>
+        <g stroke="#00f5a0" stroke-width="2" fill="none" opacity="0.35">
+            <rect x="65" y="680" width="16" height="16" rx="3" />
+            <rect x="65" y="715" width="16" height="16" rx="3" />
+            <rect x="65" y="750" width="16" height="16" rx="3" />
+            <rect x="65" y="785" width="16" height="16" rx="3" />
+        </g>
+    </svg>
+
+    <header>
+        <div class="brand-logo"><span>K</span> KAY-C</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="btn-primary">Let's Talk</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <span class="section-badge">Get In Touch</span>
+        <h2>LET'S <span class="text-mint">CONNECT</span></h2>
+        <p>Feel free to reach out using my contact details below or by filling out the form.</p>
+
+        <div class="dark-card">
+            <h3>Direct Contact Information</h3>
+            <p><strong>Phone:</strong> 0912-752-2458</p>
+            <p><strong>Email:</strong> <a href="mailto:Kaycmorales2@gmail.com" class="content-link">Kaycmorales2@gmail.com</a></p>
+            <p><strong>Address:</strong> Bacungan, Naujan, Oriental Mindoro</p>
+        </div>
+
+        <div class="dark-card">
+            <h3>Send a Message</h3>
+            <form onsubmit="handleFormSubmit(event)">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required />
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit" class="btn-primary" style="margin-top: 18px;">Send Message &rarr;</button>
+            </form>
+            <p id="form-status" style="margin-top: 12px; color: #00f5a0; font-weight: 600;"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Kay-C L. Morales | Bacungan, Naujan, Oriental Mindoro</p>
+    </footer>
+
+    <script>
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            const statusEl = document.getElementById('form-status');
+            statusEl.textContent = 'Thank you for your message! Your details have been noted.';
+            event.target.reset();
+        }
+    </script>
+
+</body>
+</html>

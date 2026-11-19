@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Kay-C L. Morales</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css" />
+</head>
+<body>
+
+    <svg class="bg-canvas" viewBox="0 0 1440 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <radialGradient id="emeraldGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#00f5a0" stop-opacity="0.32" />
+                <stop offset="100%" stop-color="#00f5a0" stop-opacity="0" />
+            </radialGradient>
+            <radialGradient id="tealGlow" cx="50%" cy="50%" r="50%">
+                <stop offset="0%" stop-color="#00d9f5" stop-opacity="0.24" />
+                <stop offset="100%" stop-color="#00d9f5" stop-opacity="0" />
+            </radialGradient>
+        </defs>
+        <circle cx="220" cy="140" r="240" fill="url(#emeraldGlow)" class="aura-pulse" />
+        <circle cx="1220" cy="720" r="280" fill="url(#tealGlow)" class="aura-pulse" />
+        <g class="spin-cw">
+            <circle cx="220" cy="140" r="145" fill="none" stroke="#00f5a0" stroke-width="1.5" stroke-dasharray="14 8" opacity="0.55" />
+            <circle cx="220" cy="140" r="115" fill="none" stroke="#00e699" stroke-width="4" stroke-dasharray="28 18" opacity="0.45" />
+            <circle cx="220" cy="140" r="82" fill="none" stroke="#7ef9d0" stroke-width="1.5" opacity="0.4" />
+        </g>
+        <g class="spin-ccw">
+            <circle cx="440" cy="270" r="95" fill="none" stroke="#00f5a0" stroke-width="2" stroke-dasharray="10 10" opacity="0.5" />
+            <circle cx="440" cy="270" r="68" fill="none" stroke="#00d9f5" stroke-width="3" stroke-dasharray="18 12" opacity="0.4" />
+        </g>
+        <g class="spin-cw-slow">
+            <circle cx="760" cy="460" r="230" fill="none" stroke="#00f5a0" stroke-width="1.5" stroke-dasharray="6 14" opacity="0.35" />
+            <circle cx="760" cy="460" r="190" fill="none" stroke="#00e699" stroke-width="2.5" stroke-dasharray="36 20" opacity="0.35" />
+            <circle cx="760" cy="460" r="140" fill="none" stroke="#7ef9d0" stroke-width="1" opacity="0.28" />
+        </g>
+        <g class="spin-cw">
+            <circle cx="1220" cy="720" r="165" fill="none" stroke="#00f5a0" stroke-width="2" stroke-dasharray="16 10" opacity="0.55" />
+            <circle cx="1220" cy="720" r="130" fill="none" stroke="#00e699" stroke-width="4.5" stroke-dasharray="24 14" opacity="0.45" />
+            <circle cx="1220" cy="720" r="90" fill="none" stroke="#00d9f5" stroke-width="1.5" opacity="0.45" />
+        </g>
+        <g class="spin-ccw">
+            <circle cx="1040" cy="560" r="76" fill="none" stroke="#00f5a0" stroke-width="2" stroke-dasharray="12 8" opacity="0.5" />
+            <circle cx="1040" cy="560" r="50" fill="none" stroke="#7ef9d0" stroke-width="2.5" opacity="0.4" />
+        </g>
+        <g stroke="#00f5a0" stroke-width="2" fill="none" opacity="0.35">
+            <rect x="65" y="680" width="16" height="16" rx="3" />
+            <rect x="65" y="715" width="16" height="16" rx="3" />
+            <rect x="65" y="750" width="16" height="16" rx="3" />
+            <rect x="65" y="785" width="16" height="16" rx="3" />
+        </g>
+    </svg>
+
+    <header>
+        <div class="brand-logo"><span>K</span> KAY-C</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html" class="btn-primary">Let's Talk</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Recent <span class="text-mint">Projects</span></h2>
+        <p style="color: #b7e4d6; margin-top: 8px; max-width: 680px;">Selected academic and technical outputs demonstrating my skills in computer vision, web design, and research documentation.</p>
+
+        <div class="project-grid">
+            <div class="project-card">
+                <div class="card-top">
+                    <span class="project-tag">AI &amp; Computer Vision</span>
+                    <span class="project-num">01</span>
+                </div>
+                <h3>Custom Object Detection Model (RF-DETR)</h3>
+                <p>Built, annotated, and trained an object detection model.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="card-top">
+                    <span class="project-tag">Web Development</span>
+                    <span class="project-num">02</span>
+                </div>
+                <h3>Personal Online Portfolio Website</h3>
+                <p>Designed and developed a multi-page personal portfolio website using semantic HTML5 elements, external CSS3 styling, custom classes, IDs, and interactive HUD animations.</p>
+            </div>
+
+            <div class="project-card">
+                <div class="card-top">
+                    <span class="project-tag">Research &amp; Analysis</span>
+                    <span class="project-num">03</span>
+                </div>
+                <h3>Academic &amp; Research Documentation</h3>
+                <p>Applied problem-solving, analytical thinking, and structured communication skills to compile quantitative evaluations and computing reports.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="skills-strip">
+        <span>&#10003; POSITIVE ADAPTIVE</span>
+        <span>&#10003; COMPUTER VISION</span>
+        <span>&#10003; PROBLEM SOLVING</span>
+        <span>&#10003; COMMUNICATION</span>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Kay-C L. Morales | Bacungan, Naujan, Oriental Mindoro</p>
+    </footer>
+
+</body>
+</html>
